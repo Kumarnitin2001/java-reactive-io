@@ -6,7 +6,6 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.TimeUnit;
 
 /**
  * 
@@ -14,7 +13,7 @@ import java.util.concurrent.TimeUnit;
  * 
  * 
  */
-public class PracticeProblemAlphaCoding {
+public class PracticeProblemAlphaCoding  extends AbstractPracticeProblem {
 
 	private Map<String, Object> memoizeMap = new HashMap<String, Object>();
 
@@ -90,7 +89,7 @@ public class PracticeProblemAlphaCoding {
 		long beginTime = System.currentTimeMillis();
 		System.out.println(new PracticeProblemAlphaCoding().representationsCount(
 				"213233256544534546213123341234512312212313123231123423123423423123123411213123123121312"));
-		System.out.println(TimeUnit.SECONDS.convert(System.currentTimeMillis() - beginTime, TimeUnit.MILLISECONDS));
+		printTotalTime(beginTime);
 	}
 
 }
